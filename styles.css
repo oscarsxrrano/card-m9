@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(0, 41, 20);
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(45deg, #00634d, #81ffc4);
+    box-shadow: 5px 10px 15px rgba(0, 255, 179, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease; 
+    margin: 2%;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translate(10px, -10px) scale(1.1) rotate(3deg); 
+    box-shadow: 10px 20px 30px rgba(0, 255, 179, 0.5), inset 0 0 10px rgba(0, 41, 20, 0.8); 
+}
+
+.card-title {
+    transition: color 0.5s ease, transform 0.5s ease; 
+}
+
+.card-title:hover {
+    color: #b4ffef; 
+    transform: scale(1.1);
+    text-shadow: 2px 2px 6px rgba(0, 255, 170, 0.7); 
+}
